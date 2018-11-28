@@ -2,10 +2,10 @@ pragma solidity ^0.4.17;
  
  
 contract CampaignFactory {
-    address [] public deployedCampaigns ; 
+    address[] public deployedCampaigns ; 
     
     function CampaignFactory(uint minimum) public {
-        address campaignAddress = new Campaign(minimum , msg.sender);
+        address campaignAddress = new Campaign(minimum, msg.sender);
         deployedCampaigns.push(campaignAddress);
     }
     
@@ -19,19 +19,20 @@ contract Campaign {
     
     struct Request {
         string description;
-        uint value ;
+        uint value;
         address recipient;
-        bool complete ;
+        bool complete;
         uint approvalCount;
-        mapping(address=>bool) approvals ;
+        mapping(address=>bool) approvals;
     }
     
     
-    Request[] public requests ; 
-    address public manager ; 
+    Request[] public requests; 
+
+    address public manager; 
     uint public minimumContribution; 
     mapping(address=>bool) public approvers;
-    uint public approversCount ; 
+    uint public approversCount; 
     
     // constructor 
     function Campaign (uint minCont , address managerAddress) public {
@@ -42,11 +43,11 @@ contract Campaign {
     
     function contribute () public payable {
         require(msg.value >= minimumContribution);
-        approvers[msg.sender]=true;
+        approvers[msg.sender] = true;
         approversCount++;
     } 
     
-    function createRequest (string description , uint value , address recipient) public restricted{
+    function createRequest (string description, uint value, address recipient) public restricted{
         Request memory req = Request({
             description:description,
             value:value,
@@ -67,9 +68,9 @@ contract Campaign {
         // make sure that the sender has not voted on a specific request before 
         require(!request.approvals[msg.sender]);
         // mark that the sender address has voted on that request 
-       request.approvals[msg.sender]=true;
+        request.approvals[msg.sender] = true;
         // increment the number of approvals
-       request.approvalCount++ ;
+        request.approvalCount++;
         
         
     }
@@ -77,13 +78,14 @@ contract Campaign {
     function finalizeRequest (uint index )public restricted {
         Request storage request = requests[index];
         
-        require(request.approvalCount> (approversCount/2));
-        require (!request.complete);
+        require(request.approvalCount > (approversCount/2));
+        require(!request.complete);
         
         request.recipient.transfer(request.value);
-        request.complete = true ;
+        request.complete = true;
     }
-    modifier restricted(){
+    
+    modifier restricted() {
         require(msg.sender == manager);
         _;
     }
