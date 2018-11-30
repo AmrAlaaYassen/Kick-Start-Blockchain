@@ -43,34 +43,34 @@ Some Screens
 <br>
 <br>
 <ol><li>
-<p>List of All Campaigns</p><img src="https://github.com/AmrAlaaYassen/Kick-Start-Blockchain/blob/master/no1.jpg">
+<p>List of All Campaigns</p><img src="https://github.com/AmrAlaaYassen/Kick-Start-Blockchain/blob/master/no1.JPG">
     <hr>
 </li>
 <li>
 <p>Create New Campaign</p>
-<img src="https://github.com/AmrAlaaYassen/Kick-Start-Blockchain/blob/master/no2.jpg"/><hr></li>
+<img src="https://github.com/AmrAlaaYassen/Kick-Start-Blockchain/blob/master/no2.JPG"/><hr></li>
 
 <li>
     <p>Verify 0 Ether Transaction to Create the new Campaign</p>
-    <img src="https://github.com/AmrAlaaYassen/Kick-Start-Blockchain/blob/master/no3.jpg">
+    <img src="https://github.com/AmrAlaaYassen/Kick-Start-Blockchain/blob/master/no3.JPG">
     <hr>
 </li>
 
 <li>
     <p>View Campaign Details</p>
-    <img src="https://github.com/AmrAlaaYassen/Kick-Start-Blockchain/blob/master/no4.jpg">
+    <img src="https://github.com/AmrAlaaYassen/Kick-Start-Blockchain/blob/master/no4.JPG">
     <hr>
 </li>
 
 <li>
     <p>Requests Details</p>
-    <img src="https://github.com/AmrAlaaYassen/Kick-Start-Blockchain/blob/master/no6.jpg">
+    <img src="https://github.com/AmrAlaaYassen/Kick-Start-Blockchain/blob/master/no6.JPG">
     <hr>
 </li>
 
 <li>
     <p>Making a New Request</p>
-    <img src="https://github.com/AmrAlaaYassen/Kick-Start-Blockchain/blob/master/no5.jpg">
+    <img src="https://github.com/AmrAlaaYassen/Kick-Start-Blockchain/blob/master/no5.JPG">
     <hr>
 </li>
 </ol>
