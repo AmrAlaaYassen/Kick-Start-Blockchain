@@ -1,6 +1,7 @@
 import React,{Component} from 'react' ; 
 import factory from '../ethereum/factory';
-
+import { Card, Button } from 'semantic-ui-react';
+import Layout from '../components/layout';
 
 class CampaignIndex extends Component {
 
@@ -10,7 +11,29 @@ class CampaignIndex extends Component {
     }
    
     render () {
-        return <div>{this.props.campaigns[0]}</div>
+        return(
+        <Layout>
+        <div>
+            <h3>Open Campaigns</h3>
+            <Button floated="right" content="Create Campaign"
+                    icon="add"
+                    primary
+            />
+            {this.renderCampaigns()}
+          
+        </div>
+        </Layout>)
+    }
+
+    renderCampaigns(){
+        const items = this.props.campaigns.map(address=>{
+            return {
+                header: address,
+                description: <a>View Campaign</a>,
+                fluid:true
+            };
+        });
+        return <Card.Group items={items} />
     }
 }
 
