@@ -28,6 +28,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _layout = require('../../components/layout');
+
+var _layout2 = _interopRequireDefault(_layout);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = 'C:\\Users\\Adam\\Desktop\\Blockchain\\kick-starter\\pages\\campaigns\\show.js?entry';
@@ -45,12 +49,17 @@ var CampaignShow = function (_Component) {
     (0, _createClass3.default)(CampaignShow, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement('h3', {
+            return _react2.default.createElement(_layout2.default, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 5
+                    lineNumber: 6
                 }
-            }, 'Campaign Show');
+            }, _react2.default.createElement('h3', {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 7
+                }
+            }, 'Campaign Show'));
         }
     }]);
 
@@ -60,4 +69,4 @@ var CampaignShow = function (_Component) {
 ;
 
 exports.default = CampaignShow;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzXFxjYW1wYWlnbnNcXHNob3cuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJDb21wb25lbnQiLCJDYW1wYWlnblNob3ciXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFROzs7Ozs7Ozs7SUFFVCxBOzs7Ozs7Ozs7OztpQ0FDTSxBQUNKO21DQUFRLGNBQUE7OzhCQUFBO2dDQUFBO0FBQUE7QUFBQSxhQUFBLEVBQVIsQUFBUSxBQUNUOzs7OztBLEFBSG9COztBQUkxQixBQUVEOztrQkFBQSxBQUFlIiwiZmlsZSI6InNob3cuanM/ZW50cnkiLCJzb3VyY2VSb290IjoiQzovVXNlcnMvQWRhbS9EZXNrdG9wL0Jsb2NrY2hhaW4va2ljay1zdGFydGVyIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzXFxjYW1wYWlnbnNcXHNob3cuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJDb21wb25lbnQiLCJMYXlvdXQiLCJDYW1wYWlnblNob3ciXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFROzs7O0FBQ2YsQUFBTyxBQUFZOzs7Ozs7Ozs7SSxBQUNiOzs7Ozs7Ozs7OztpQ0FDTSxBQUNKO21DQUNBLEFBQUM7OzhCQUFEO2dDQUFBLEFBQ0k7QUFESjtBQUFBLGFBQUEsa0JBQ0ksY0FBQTs7OEJBQUE7Z0NBQUE7QUFBQTtBQUFBLGVBRkosQUFDQSxBQUNJLEFBR0w7Ozs7O0EsQUFQb0I7O0FBUTFCLEFBRUQ7O2tCQUFBLEFBQWUiLCJmaWxlIjoic2hvdy5qcz9lbnRyeSIsInNvdXJjZVJvb3QiOiJDOi9Vc2Vycy9BZGFtL0Rlc2t0b3AvQmxvY2tjaGFpbi9raWNrLXN0YXJ0ZXIifQ==
